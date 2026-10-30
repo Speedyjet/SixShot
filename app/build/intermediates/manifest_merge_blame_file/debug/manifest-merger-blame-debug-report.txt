@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.speedyjet.sixshot.hu" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="29"
+6-->/workspace/app/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->/workspace/app/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+9-->/workspace/app/src/main/AndroidManifest.xml:5:5-81
+9-->/workspace/app/src/main/AndroidManifest.xml:5:22-78
+10    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+10-->/workspace/app/src/main/AndroidManifest.xml:6:5-80
+10-->/workspace/app/src/main/AndroidManifest.xml:6:22-77
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/workspace/app/src/main/AndroidManifest.xml:7:5-79
+11-->/workspace/app/src/main/AndroidManifest.xml:7:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/workspace/app/src/main/AndroidManifest.xml:8:5-81
+12-->/workspace/app/src/main/AndroidManifest.xml:8:22-78
+13    <uses-permission android:name="android.permission.BLUETOOTH" />
+13-->/workspace/app/src/main/AndroidManifest.xml:9:5-68
+13-->/workspace/app/src/main/AndroidManifest.xml:9:22-65
+14    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+14-->/workspace/app/src/main/AndroidManifest.xml:10:5-80
+14-->/workspace/app/src/main/AndroidManifest.xml:10:22-77
+15    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+15-->/workspace/app/src/main/AndroidManifest.xml:11:5-78
+15-->/workspace/app/src/main/AndroidManifest.xml:11:22-75
+16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+16-->/workspace/app/src/main/AndroidManifest.xml:12:5-81
+16-->/workspace/app/src/main/AndroidManifest.xml:12:22-78
+17
+18    <application
+18-->/workspace/app/src/main/AndroidManifest.xml:14:5-29:19
+19        android:allowBackup="false"
+19-->/workspace/app/src/main/AndroidManifest.xml:15:9-36
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:label="Volvo XC90 OS &amp; Probe" >
+22-->/workspace/app/src/main/AndroidManifest.xml:16:9-50
+23        <activity
+23-->/workspace/app/src/main/AndroidManifest.xml:18:9-27:20
+24            android:name="com.volvo.hu.probe.ProbeActivity"
+24-->/workspace/app/src/main/AndroidManifest.xml:19:13-60
+25            android:exported="true"
+25-->/workspace/app/src/main/AndroidManifest.xml:20:13-36
+26            android:screenOrientation="landscape"
+26-->/workspace/app/src/main/AndroidManifest.xml:21:13-50
+27            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+27-->/workspace/app/src/main/AndroidManifest.xml:22:13-75
+28            <intent-filter>
+28-->/workspace/app/src/main/AndroidManifest.xml:23:13-26:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/workspace/app/src/main/AndroidManifest.xml:24:17-69
+29-->/workspace/app/src/main/AndroidManifest.xml:24:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/workspace/app/src/main/AndroidManifest.xml:25:17-77
+31-->/workspace/app/src/main/AndroidManifest.xml:25:27-74
+32            </intent-filter>
+33        </activity>
+34    </application>
+35
+36</manifest>

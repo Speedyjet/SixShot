@@ -1,0 +1,83 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /workspace/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /workspace/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /workspace/app/src/main/AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:3:5-27
+		INJECTED from /workspace/app/src/main/AndroidManifest.xml
+		INJECTED from /workspace/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /workspace/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /workspace/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /workspace/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /workspace/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.BLUETOOTH
+ADDED from /workspace/app/src/main/AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:9:22-65
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /workspace/app/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:10:22-77
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /workspace/app/src/main/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:11:22-75
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /workspace/app/src/main/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:12:22-78
+application
+ADDED from /workspace/app/src/main/AndroidManifest.xml:14:5-29:19
+	android:label
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:16:9-50
+	android:allowBackup
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:15:9-36
+activity#com.volvo.hu.probe.ProbeActivity
+ADDED from /workspace/app/src/main/AndroidManifest.xml:18:9-27:20
+	android:screenOrientation
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:21:13-50
+	android:exported
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:20:13-36
+	android:theme
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:22:13-75
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:19:13-60
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /workspace/app/src/main/AndroidManifest.xml:23:13-26:29
+action#android.intent.action.MAIN
+ADDED from /workspace/app/src/main/AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /workspace/app/src/main/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from /workspace/app/src/main/AndroidManifest.xml:25:27-74
+uses-sdk
+INJECTED from /workspace/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /workspace/app/src/main/AndroidManifest.xml
+INJECTED from /workspace/app/src/main/AndroidManifest.xml
+INJECTED from /workspace/app/src/main/AndroidManifest.xml
+INJECTED from /workspace/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /workspace/app/src/main/AndroidManifest.xml
+		ADDED from /workspace/app/src/main/AndroidManifest.xml
+		INJECTED from /workspace/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /workspace/app/src/main/AndroidManifest.xml
+		ADDED from /workspace/app/src/main/AndroidManifest.xml
+		INJECTED from /workspace/app/src/main/AndroidManifest.xml

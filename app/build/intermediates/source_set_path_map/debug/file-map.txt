@@ -1,0 +1,8 @@
+com.speedyjet.sixshot.hu.app-pngs-0 /workspace/app/build/generated/res/pngs/debug
+com.speedyjet.sixshot.hu.app-resValues-1 /workspace/app/build/generated/res/resValues/debug
+com.speedyjet.sixshot.hu.app-rs-2 /workspace/app/build/generated/res/rs/debug
+com.speedyjet.sixshot.hu.app-mergeDebugResources-3 /workspace/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.speedyjet.sixshot.hu.app-mergeDebugResources-4 /workspace/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.speedyjet.sixshot.hu.app-merged_res-5 /workspace/app/build/intermediates/merged_res/debug
+com.speedyjet.sixshot.hu.app-debug-6 /workspace/app/src/debug/res
+com.speedyjet.sixshot.hu.app-main-7 /workspace/app/src/main/res

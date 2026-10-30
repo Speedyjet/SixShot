@@ -1,24 +1,15 @@
 // Top-level build file
-buildscript {
-    repositories {
-        mavenCentral()
-        google()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0'
-        classpath 'org.gradle.tooling:gradle-enterprise:0.0.1'
-    }
-}
-
 plugins {
-    id 'com.android.application' version 8.1.0 apply false
+    id 'com.android.application' version '7.4.2' apply false
+    id 'com.android.library' version '7.4.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.20' apply false
 }
 
 allprojects {
     group = 'com.speedyjet'
     version = '1.0'
-    
-    tasks.withType(JavaCompile) {
+
+    tasks.withType(JavaCompile).configureEach {
         options.encoding = 'UTF-8'
     }
 }
