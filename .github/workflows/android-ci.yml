@@ -19,13 +19,13 @@ jobs:
           distribution: 'temurin'
 
       - name: Run Unit Tests (QA Suite)
-        run: ./gradlew testDebugUnitTest --stacktrace
+        run: bash ./gradlew testDebugUnitTest --stacktrace
 
       - name: Run Android Lint
-        run: ./gradlew lintDebug
+        run: bash ./gradlew lintDebug
 
       - name: Assemble Debug APK
-        run: ./gradlew assembleDebug
+        run: bash ./gradlew assembleDebug
 
       - name: Upload Compiled APK Artifact
         uses: actions/upload-artifact@v4
