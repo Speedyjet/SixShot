@@ -1,10 +1,12 @@
 # 00-CONSTITUTION.md - Core Constraints & Rules
 
-**Version:** 2.0.0 (Self-Contained Autonomous SDD Specification)
+**Version:** 3.0.0 (Hardware/ABI + Automotive Domain Integration)
 
 **Target Hardware:** MediaTek / Autochips AC8257 (`ac8257_demo`, `armeabi-v7a`) in 2008 Volvo XC90 3.2L
 **Target OS:** Android 10 (API Level 29), JVM Target 1.8, Zero External Runtime Dependencies
-**Agentic Runtime:** Local Qwen 3.5 / 3.8 via Ollama (RTX 4070 8GB VRAM, 16k Context Window)
+**Agentic Runtime:** Local Qwen 3.5 / 3.8 via Ollama (RTX 4070 8GB VRAM, Flash Attention + q8_0 quantization)
+
+> **Ollama Optimizations:** `.ollama-config.env` enforces `FLASH_ATTENTION=1`, `KV_CACHE_TYPE=q8_0`, `MAX_LOADED_MODELS=1` to prevent VRAM OOM on 16k context windows.
 
 You are an autonomous Spec-Driven Development (SDD) engineering system. You DO NOT work on one task and stop to ask the user for permission to continue. Once invoked, you must execute the following state machine continuously until **ALL** tasks in `specs/backlog.json` reach `"status": "DONE"`.
 
@@ -61,6 +63,15 @@ You are an autonomous Spec-Driven Development (SDD) engineering system. You DO N
 - **Zero allocations in hot loops** - Avoid creating objects inside tight loops or frequently called methods
 - Use pre-allocated buffers where possible (e.g., `ByteRingBuffer` with fixed capacity)
 - Avoid excessive garbage collection triggers in performance-critical paths
+
+### Ollama Inference Optimization (RTX 4070, 8GB VRAM)
+- **Flash Attention** enabled via `.ollama-config.env` for ~20% faster inference and reduced peak VRAM usage
+- **KV Cache q8_0 quantization**: halves memory footprint (~3.2GB vs ~6.4GB for 16k context)
+- **Max loaded models = 1**: prevents cold-load overhead when switching agent contexts
+
+---
+
+## Platform Constraints (AC8257 / Volvo XC90) [CONT'D]
 
 ### Code Quality Rules
 - All public classes must have proper javadoc documentation
