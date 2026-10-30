@@ -18,6 +18,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Generate Gradle Wrapper
+        uses: gradle/gradle-wrapper-action@v2.0
+
       - name: Run Unit Tests (QA Suite)
         run: bash ./gradlew testDebugUnitTest --stacktrace
 
