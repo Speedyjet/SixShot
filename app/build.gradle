@@ -1,0 +1,38 @@
+// Gradle build file for app module
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.speedyjet.sixshot.hu'
+    compileSdk 29
+    
+    defaultConfig {
+        applicationId "com.speedyjet.sixshot.hu"
+        minSdk 29
+        targetSdk 30
+        
+        // Compile with Java 8 (as per constitution)
+        javaCompileOptions {
+            sourceCompatibility = JavaVersion.VERSION_1_8
+            targetCompatibility = JavaVersion.VERSION_1_8
+        }
+        
+        buildConfigField "String", "PRODUCT_NAME", "\"SixShot HU\""
+    }
+    
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
