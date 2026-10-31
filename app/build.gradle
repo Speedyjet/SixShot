@@ -1,38 +1,33 @@
-// Gradle build file for app module
 plugins {
     id 'com.android.application'
 }
 
 android {
-    namespace 'com.speedyjet.sixshot.hu'
+    namespace 'com.volvo.hu'
     compileSdk 29
-    
+
     defaultConfig {
-        applicationId "com.speedyjet.sixshot.hu"
+        applicationId "com.volvo.hu"
         minSdk 29
-        targetSdk 30
-        
-        // Compile with Java 8 (as per constitution)
-        javaCompileOptions {
-            sourceCompatibility = JavaVersion.VERSION_1_8
-            targetCompatibility = JavaVersion.VERSION_1_8
-        }
-        
-        buildConfigField "String", "PRODUCT_NAME", "\"SixShot HU\""
+        targetSdk 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    
-    buildTypes {
-        debug {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
+
+    lint {
+        textReport true
+        disable 'ExpiredTargetSdkVersion', 'OldTargetApi'
+        abortOnError false
     }
-    
+
     compileOptions {
-        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
 }
